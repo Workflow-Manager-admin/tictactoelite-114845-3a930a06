@@ -1,0 +1,42 @@
+
+> dev
+> nuxt dev --port 3000 --host 0.0.0.0
+
+[ nuxi ] Nuxt 3.16.0 with Nitro 2.11.6
+
+ 
+              █▀▀▀▀▀▀▀███▀█▀▀▀███▀▀▀▀▀▀▀█
+              █ █▀▀▀█ █▄█▄█▀▄█▄██ █▀▀▀█ █
+              █ █   █ █▄ ▄█▄▄▀▄▄█ █   █ █
+              █ ▀▀▀▀▀ █ ▄▀▄ ▄▀▄▀█ ▀▀▀▀▀ █
+              █▀▀▀▀▀█▀▀▀ ▄ █▀▄█▄▀█▀█▀█▀██
+              █ ▄ ▀▀▄▀▀██ █▄█▄▀█▄▀▀▀▀█ ▀█
+              █▀█▄▀▀▄▀█▀▀▀█ ▀█ ▀█▀ ▀█▀▀ █
+              █ ▄█▀▀ ▀█ ▄▀▀▀█▄▀█▀█▀█ █ ▀█
+              █ █▀▄▄ ▀▄    █▀██ ▀▀▀▀▄▀█▄█
+              █▀▀▀▀▀▀▀█   █▄█▄▄ █▀█   ▀▀█
+              █ █▀▀▀█ █▀▄▀█ ▀█  ▀▀▀  ▀ ▀█
+              █ █   █ █ ▀▄▀▀ ▀█▄▀▄▄▄█ ▄ █
+              █ ▀▀▀▀▀ █ ▀  ▀█▄▀▄▀    ▀▀ █
+              ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+ 
+  ➜ Local:    http://0.0.0.0:3000/
+  ➜ Network:  http://172.17.0.2:3000/ [QR code]
+
+  ➜ DevTools: press Shift + Alt + D in the browser (v2.2.1)
+
+✔ Vite client built in 43ms
+✔ Vite server built in 397ms
+[nitro] ✔ Nuxt Nitro server built in 906ms
+ℹ Vite client warmed up in 3ms
+ℹ Vite server warmed up in 656ms
+ℹ hmr update /app.vue?vue&type=style&index=0&scoped=938b83b0&lang.css
+ℹ hmr update /app.vue?vue&type=style&index=0&scoped=938b83b0&lang.css (x2)
+[ nuxi ] ℹ .nuxt/dist directory has been removed. Restarting Nuxt...
+  ➜ DevTools: press Shift + Alt + D in the browser (v2.2.1)
+
+✔ Vite client built in 26ms
+✔ Vite server built in 350ms
+[nitro] ✔ Nuxt Nitro server built in 629ms
+ℹ Vite client warmed up in 2ms
+ℹ Vite server warmed up in 521ms

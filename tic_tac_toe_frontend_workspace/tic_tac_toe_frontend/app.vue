@@ -171,17 +171,20 @@ body, .container {
   margin: 1.3rem 0 0.5rem 0;
 }
 
+/* Board grid with visible black grid lines - uses outline and borders for clear visibility */
 .board {
   display: grid;
   grid-template-columns: repeat(3, 82px);
   grid-template-rows: repeat(3, 82px);
-  gap: 7.5px;
+  gap: 0; /* Remove gap, we'll draw the lines */
+  position: relative;
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 1px 10px rgba(45,140,255,0.05);
-  padding: 13px;
-  border: 1.5px solid var(--border);
+  padding: 0;
+  border: 2.5px solid #222;
   transition: background 0.2s;
+  overflow: hidden;
 }
 .board.ended {
   opacity: 0.96;
@@ -189,14 +192,22 @@ body, .container {
 }
 .cell {
   width: 82px; height: 82px;
-  border-radius: 13px;
-  border: 1.5px solid var(--border);
+  border-radius: 0; /* Square corners for grid effect */
   font-size: 2.2rem;
   font-weight: 600;
   background: #fff;
   cursor: pointer;
   outline: none;
+  border: none;
+  position: relative;
   transition: background 0.15s, box-shadow 0.2s;
+}
+/* Draw grid lines using border-right and border-bottom on inner cells */
+.cell:not(:nth-child(3)):not(:nth-child(6)):not(:nth-child(9)) {
+  border-right: 2.5px solid #222;
+}
+.cell:nth-child(-n+6) {
+  border-bottom: 2.5px solid #222;
 }
 .cell:enabled:hover {
   background: var(--cell-hover);
@@ -223,7 +234,8 @@ body, .container {
   border-radius: 9px;
   border: none;
   background: linear-gradient(90deg, var(--primary), var(--accent));
-  color: #fff;
+  color: #111 !important;
+  text-shadow: none !important;
   box-shadow: 0 2px 8px rgba(45,140,255,0.07);
   cursor: pointer;
   transition: background 0.2s, color 0.15s, transform 0.12s;
